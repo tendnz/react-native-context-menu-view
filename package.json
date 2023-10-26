@@ -3,8 +3,8 @@
   "title": "React Native Context Menu View",
   "version": "1.11.0",
   "description": "Use native context menu views from React Native",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "react-native": "js/index",
+  "source": "js/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,5 +26,13 @@
   "peerDependencies": {
     "react": "^16.8.1 || ^17.0.0 || ^18.0.0",
     "react-native": ">=0.60.0-rc.0 <1.0.x"
+  },
+  "codegenConfig": {
+    "name": "react-native-context-menu-view-specs",
+    "type": "all",
+    "jsSrcsDir": "js",
+    "android": {
+      "javaPackageName": "com.facebook.fbreact.nativeContextMenu"
+    }
   }
 }
